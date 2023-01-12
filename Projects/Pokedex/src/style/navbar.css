@@ -18,3 +18,12 @@
     height: 20px;
     background-color: gray;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    object-fit: cover;
+}

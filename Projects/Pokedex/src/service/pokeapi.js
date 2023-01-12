@@ -27,6 +27,16 @@ export const get_pokemon = async(id) => {
     return data
 }
 
+//Get All Pokemons
+
+export const get_allPokemons = async() => {
+    const res = await fetch (`${BaseURL}pokemon?limit=100000&offset=0`)
+    let data = await res.json()
+    return data.results
+}
+
+//Evolves Chain
+
 export const get_evolves = async() => {
     const res = await fetch(`${BaseURL}evolution-chain/?offset=100000&limit=0`)
     let data = await res.json()

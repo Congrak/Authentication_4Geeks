@@ -22,8 +22,3 @@ Make sure you are using node version 7+
 - Boostrap
 - Javascript
 - CSS
-- Redux
-
-## Note
-
-Is my firts time using Vite and Redux

@@ -14,7 +14,7 @@ const Layout = () => {
 				<Routes>
 					<Route path='/' element={<App />} />
 					<Route path="/pokemon/:id" element={<PokeData />} />
-					<Route path="/search" element={<Search />} />
+					<Route path="/search/:pokeName" element={<Search />} />
 					<Route path="*" element={<h1>Not found!</h1>} />
 				</Routes>
 			</BrowserRouter>

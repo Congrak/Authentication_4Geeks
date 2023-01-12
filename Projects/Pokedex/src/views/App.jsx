@@ -52,7 +52,7 @@ function App() {
       <div className='wrapper'>
         {pokemons?.map((pokemon, index) => {
           return (
-            <Link to={`/pokemon/${pokemon.id}`}>
+            <Link to={`/pokemon/${pokemon.id}`} style={{ textDecoration: 'none' }}>
               <div className="card" key={index}>
 
                 <div className='imgDiv'>
