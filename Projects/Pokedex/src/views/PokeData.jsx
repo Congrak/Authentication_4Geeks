@@ -17,7 +17,7 @@ export const PokeData = () => {
             let evolveInfo = await get_evolves()
             setEvolve(evolveInfo)
             setInfo(pokemonInfo)
-            console.log(evolveInfo, 'this')
+            //console.log(evolveInfo, 'this')
         }
         set()
     }, [])
@@ -44,9 +44,15 @@ export const PokeData = () => {
                     </div>
 
                     <div className='type'>{info?.types.map((type, index) => {
-                        return <div key={index} className={`${type.type.name}`}>{type.type.name}</div>
+                        console.log(type.type.name)
+                        return(
+                            <div key={index} className={`${type.type.name}`}>
+                                {type.type.name}
+                            </div>
+                        ) 
                     })}
                     </div>
+
                     {info?.stats.map((stat, index) => {
                         //console.log(stat)
                         let barClass = 'progress-bar progress-bar-striped progress-bar-animated'
