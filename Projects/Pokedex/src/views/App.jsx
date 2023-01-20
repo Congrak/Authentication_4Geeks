@@ -10,7 +10,7 @@ function App() {
 
   const [pokemons, setPokemons] = useState()
   const [offset, setOffset] = useState(0)
-  const [limit, setLimit] = useState(50)
+  const [limit, setLimit] = useState(0)
 
   //First Call for API
 
@@ -50,40 +50,41 @@ function App() {
     <div className="App">
       <Navbar />
       <div className='wrapper'>
-        {pokemons?.map((pokemon, index) => {
-          return (
-            <Link to={`/pokemon/${pokemon.id}`} style={{ textDecoration: 'none' }}>
-              <div className="card" key={index}>
-
-                <div className='imgDiv'>
-                  <img src={pokemon.sprites.front_default} className="card-img-top" alt={pokemon.name} />
-                </div>
-
-                <div className="card-body">
-                  <div className='name'>
-                    <h5 className="card-title">#{pokemon.id} {pokemon.name}</h5>
+        {
+          pokemons?.map((pokemon, index) => {
+            return (
+              <Link to={`/pokemon/${pokemon.id}`} style={{ textDecoration: 'none' }}>
+                
+                <div className="card" key={index}>
+  
+                  <div className='imgDiv'>
+                    <img src={pokemon.sprites.front_default} className="card-img-top" alt={pokemon.name} />
                   </div>
-                </div>
-
-                <div className='features'>
-                  <div className='pokeHeight'>{pokemon.height} M</div>
-                  <div className='pokeWeight'>{pokemon.weight} Kg</div>
-
-                </div>
-
-                <div className='type'>{pokemon.types?.map((type, index) => {
-                  return <div key={index} className={`${type.type.name}`}>{type.type.name}</div>
-                })}
-                </div>
-
-              </div>
-            </Link>
-          )
-        })}
+  
+                  <div className="card-body">
+                    <div className='name'>
+                      <h5 className="card-title">#{pokemon.id} {pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</h5>
+                    </div>
+                  </div>
+  
+                  <div className='features'>
+                    <div className='pokeHeight'>{pokemon.height} M</div>
+                    <div className='pokeWeight'>{pokemon.weight} Kg</div>
+  
+                  </div>
+  
+                  <div className='type'>{pokemon.types?.map((type, index) => {
+                    return <div key={index} className={`${type.type.name}`}>{type.type.name[0].toUpperCase() + type.type.name.slice(1)}</div>
+                  })}
+                  </div>
+                  </div>
+              </Link>
+            )
+          })}
       </div>
 
       <div className='footer'>
-        <button type="button" className="btn btn-warning" onClick={() => {
+        <button type="button" className="nes-btn is-warning" onClick={() => {
           morePokemons()
         }}>More Pokemons</button>
       </div>

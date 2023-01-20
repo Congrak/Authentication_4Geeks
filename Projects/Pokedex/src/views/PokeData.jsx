@@ -27,7 +27,7 @@ export const PokeData = () => {
             <Navbar />
 
             <div className="titleData">
-                <div><h1>{info?.name}</h1></div>
+                <div><h1>{info?.name[0].toUpperCase() + info?.name.slice(1) }</h1></div>
             </div>
 
             <div className="bodyData">
@@ -44,10 +44,10 @@ export const PokeData = () => {
                     </div>
 
                     <div className='type'>{info?.types.map((type, index) => {
-                        console.log(type.type.name)
+                        //console.log(type.type.name)
                         return(
                             <div key={index} className={`${type.type.name}`}>
-                                {type.type.name}
+                                {type.type.name[0].toUpperCase() + type.type.name.slice(1)}
                             </div>
                         ) 
                     })}
@@ -64,7 +64,7 @@ export const PokeData = () => {
                         else if (stat.stat.name == 'speed') barClass = 'progress-bar progress-bar-striped progress-bar-animated bg-info'
                         return (
                             <div className="stats" key={index}>
-                                <span className="statName"> {stat.stat.name}</span>
+                                <span className="statName"> {stat.stat.name[0].toUpperCase() + stat.stat.name.slice(1)}</span>
                                 <div id={stat.stat.name} className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                     <div className={barClass} style={{ width: `${stat.base_stat}%` }}></div>
                                 </div>

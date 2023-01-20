@@ -9,7 +9,11 @@
       transform: translateY(0%);
     }
   }
-
+  
+  * {
+    font-family: 'Press Start 2P', cursive !important;
+  }
+  
 .wrapper{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -63,8 +67,11 @@
     align-items: center;
     height: 20px;
     color: black;
-    
+    font-size: 10px;
+}
 
+.card-title {
+  font-size: 12px;
 }
 
 .type {
@@ -73,6 +80,6 @@
     align-items: center;
     height: 20px;
     margin: 10px;
-	color: #fff;
-
+	  color: #fff;
+    font-size: 10px;
 }

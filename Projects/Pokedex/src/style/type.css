@@ -28,108 +28,108 @@
 
 .water {
 	background-color: var(--color-water);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .grass {
 	background-color: var(--color-grass);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .poison {
 	background-color: var(--color-poison);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .fire {
 	background-color: var(--color-fire);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .bug {
 	background-color: var(--color-bug);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .dragon {
 	background: var(--color-dragon);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .flying {
 	background-color: var(--color-flying);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .ground {
 	background-color: var(--color-ground);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .steel {
 	background-color: var(--color-steel);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .psychic {
 	background-color: var(--color-psychic);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .ice {
 	background-color: var(--color-ice);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .ghost {
 	background-color: var(--color-ghost);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .normal {
 	background-color: var(--color-normal);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .rock {
 	background-color: var(--color-rock);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .electric {
 	background-color: var(--color-electric);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .fighting {
 	background-color: var(--color-fighting);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .fairy {
 	background-color: var(--color-fairy);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
 
 .dark {
 	background-color: var(--color-dark);
-    padding: 5px 20px;
+    padding: 5px 5px;
 	border-radius: 5px;
 }
