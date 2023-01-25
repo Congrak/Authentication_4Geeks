@@ -1,0 +1,63 @@
+html {font-family: Arial, Helvetica, sans-serif;}
+h1 {
+    text-align: center;
+    background-color: white;
+    
+}
+body {
+    background-color: black;
+    margin: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    border:none;
+    height: 1800px;
+}
+
+* {
+	border: 1px dashed transparent;
+	min-height: 10px;
+}
+.feed { 
+    background-color: rgb(229, 226, 226);
+    height: 85%;
+    padding: none;
+    border: none;
+}
+
+.post {
+    background-color: white;
+	width: 400px;
+	height: 250px;
+	margin:auto;
+    padding: none;
+    border:none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+article {
+    padding-bottom: 30px;
+    padding-top: none;
+    border:none;
+}
+
+.postHeader{
+    display:flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.date {
+    color: rgb(176, 170, 170);
+}
+
+.postFotter {
+    font-size: 0.8rem;
+}

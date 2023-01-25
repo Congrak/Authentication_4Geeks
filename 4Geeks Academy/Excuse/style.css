@@ -1,0 +1,12 @@
+p {
+    text-align: center;
+    font-size: 90px;
+    font: bold;
+    margin-top: 200px;
+}
+
+div {
+    margin-left: 210px;
+    font-size: 45px;
+    text-decoration: underline;
+}

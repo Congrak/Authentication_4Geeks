@@ -2,7 +2,7 @@
 
 I create this app using React + Vite
 
-## Why am i using Vite + Vue?
+## Why am i using Vite?
 
 - More faster for small projects
 - More easier to configure

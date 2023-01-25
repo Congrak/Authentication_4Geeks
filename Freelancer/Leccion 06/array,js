@@ -1,0 +1,49 @@
+let cont = 0, num = 20;
+let sum = 0;
+const array = [], arrayB = [];
+
+
+for (i = 1; i <= 10; i++){
+    array.push(i);
+    
+    for (j = 1; j <= i; j++){
+        if (i % j == 0){
+            cont++;
+        }
+    }
+    if (cont == 2){
+       
+        arryaB =[arrayB.push(i)]
+     }
+     cont = 0;
+}
+console.log(' El arreglo es: ' + arrayB)
+
+function reverseArrayB()  {
+    arrayB.sort(function(a,b){
+    return b - a  
+    })
+    return console.log('Arreglo de mayor a menor: ' + arrayB)
+}
+
+let sumNumbersArrayB = () => {
+
+    for ( let a = 0; a <= arrayB.length; a++){
+        sum = sum += arrayB[a];
+    }return console.log('La suma del array es: ' + sum);
+}
+let findNumber = () => {
+   if (arrayB.includes(num) == true){
+      console.log('El numero se encuentra en el arreglo: ' + num);
+   }return console.log('El numero no esta en el arreglo');
+}
+
+findNumber()
+
+sumNumbersArrayB()
+
+reverseArrayB()
+
+console.log('Ordenamos otra vez el arreglo: ' + arrayB.reverse());
+
+    

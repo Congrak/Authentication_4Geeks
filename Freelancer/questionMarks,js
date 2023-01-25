@@ -1,0 +1,54 @@
+﻿const QuestionsMarks = (testString) => {
+  let position = 0;
+  let check = true;
+
+
+  let stackOfPairs = [];
+  let stackOfInterrogations = [];
+
+
+  while (position < testString.length && check) {
+
+
+    if (!isNaN(testString[position])) {
+      // it is a number
+
+
+      if (stackOfPairs.length < 2) {
+        stackOfPairs.push(testString[position]);
+      }
+
+
+      if (stackOfPairs.length === 2) {
+        if (stackOfInterrogations.length === 3) {
+          if ((parseInt(stackOfPairs[0]) + parseInt(stackOfPairs[1])) < 10) {
+            check = false;
+          }
+          stackOfPairs = [];
+          stackOfInterrogations = [];
+        } else {
+          check = false;
+        }
+      }
+    } else {
+      // it is not a number and we can push '?' only if there is already a number in our stack
+      if (stackOfPairs.length === 1 && testString[position] === '?') {
+        stackOfInterrogations.push('?');
+      }
+    }
+    position = position + 1;
+  }
+
+
+  return check;
+}
+
+
+const firstTestPattern = 'arrb6???4xxbl5???eee5';
+const firstTest = QuestionsMarks(firstTestPattern);
+console.log(`firstTest ${firstTestPattern} ${firstTest}`);
+
+
+const secondTestPattern = 'aa6?9';
+const secondTest = QuestionsMarks(secondTestPattern);
+console.log(`firstTest ${secondTestPattern} ${secondTest}`);
